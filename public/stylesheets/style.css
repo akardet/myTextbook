@@ -1,0 +1,146 @@
+body { 
+  padding-top: 50px; 
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.jumbotron {
+  background-color: #ff9900; /* Orange */
+  color: #ffffff;
+}
+
+.container-fluid {
+  padding: 60px 50px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #ff9900;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 2px;
+  border-radius: 0;
+  padding: 10px 0px 10px;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.nav-button {
+  border: solid 3px #DB8403;
+  margin-right: -80px;
+
+}
+
+.navbar-nav>li>a {
+  padding: 10px 15px 10px 15px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+.header-title {
+  margin-top: 0;
+  padding-top: 60px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.about-containter {
+  font-family: "Franklin Gothic Medium";
+  color: #424242;
+  margin-top: 100px;
+} 
+
+.about-containter p {
+  font-size: 18px;
+}
+
+.upload-container {
+ margin-top: 125px;
+ font-family: "Franklin Gothic Medium";
+ color: #424242;
+}
+
+.upload-container ul {
+  padding-left: 0;
+}
+
+.upload-container label {
+  font-size: 22px;
+}
+
+.upload-container h1 {
+  font-family: "Arial Black";
+}
+
+.upload-cst-padding {
+  padding-left: 0;
+}
+
+.search-box {
+    margin-top: 40px;
+    width: 555px;
+    height: 40px;
+    border: solid 2px #BCBCBC;
+    border-radius: 4px;
+    font-family: "Franklin Gothic Medium";
+    font-size: 17px;
+    padding-left: 15px;
+    color: #424242;
+}
+
+.search-button {
+    margin-left: -45px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #BCBCBC;
+    top: 4px;
+}
+
+.about-left {
+  margin-left: 15%;
+}
+
+.about-right {
+  float: right;
+  right: 15%;
+}
+
+.upload-logo {
+  height: 100px;
+  width: 100px;
+  margin-top: 30px;
+}
+
+.upload-input {
+  height: 35px;
+  border: solid 2px #BCBCBC;
+  border-radius: 4px;
+  font-family: "Franklin Gothic Medium";
+  font-size: 17px;
+}
+
+.left-panel {
+  left:0;
+  height: 100%;
+  width: 20%;
+  top: 0px;
+}
+
+.left-block {
+  position: absolute;
+  background-color: #ff9900;
+}
+

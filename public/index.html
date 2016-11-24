@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html ng-app="myTextbook">
+<head>
+    <meta charset="utf-8">
+    <title>myTextbook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+
+    <!-- JS libraries -->
+
+    <script src="./bower_components/angular/angular.js"></script>   
+    <script src="./bower_components/angular-route/angular-route.js"></script>
+    <script src="./bower_components/filepicker-js/filepicker.js"></script>
+    <script src="./bower_components/angular-filepicker/dist/angular_filepicker.js"></script>
+
+    <!-- Angular files -->
+    <script src="./app.js"></script>    
+
+    <script src="./controllers/addTextbookController.js"></script>
+
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div id="navbar-main cd-main-content">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-button"><a href="/#/addTextbook">Upload</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="jumbotron text-center header">
+    <img src="http://i.imgur.com/CTVirOC.png">
+</div>
+
+    <!-- Here is where the partials will be displayed -->
+    <div ng-view></div>
+</body>
+</html>
