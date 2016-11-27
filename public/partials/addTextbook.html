@@ -1,28 +1,41 @@
 <div class="container col-lg-12">
-  <div class="col-lg-4"></div>
-  <div class="col-lg-8 upload-container">
+  <div class="upload-container">
     <h1>UPLOAD</h1>
     <ul>
       <li>
         <label>Title</label>
-        <input class="upload-input"></input>
+        <input class="upload-input upload-input-big" ng-model="textbook.title" required></input>
       </li>
       <li>
         <label>Author</label>
-        <input class="upload-input"></input>
+        <input class="upload-input upload-input-big" ng-model="textbook.author" required></input>
       </li>
-      <div class="col-lg-4 upload-cst-padding">
-        <li>
-          <label>Edition</label>
-          <input class="upload-input"></input>
-        </li>
-      </div>
-      <div class="col-lg-8 upload-cst-padding">
-        <li>
-          <label>ISBN</label>
-          <input class="upload-input"></input>
-        </li>
-      </div>
+      <li class="col-lg-5 upload-cst-padding">
+        <label>Edition</label>
+        <input class="upload-input upload-edition" ng-model="textbook.edition" required></input>
+      </li>
+      <li class="col-lg-7 upload-cst-padding">
+        <label>ISBN</label>
+        <input class="upload-input upload-isbn" ng-model="textbook.isbn" required></input>
+      </li>
+      <li class="test-padding">
+        <label>Link</label>
+        <input class="upload-input upload-input-big" ng-model="textbook.link" required></input>
+      </li>
+      <li class="col-lg-5">
+        <label>Cover</label>
+        <button type="button" class="btn btn-default" ng-click="upload()">
+          Upload <span class="caret"></span>
+        </button>
+      </li>
+      <li class="col-lg-7 filename">
+        <span class="filename-text">{{textbook.cover.filename}}</span>
+      </li>
     </ul>
+    <div class="upload-button-block">
+      <a class="btn btn-danger upload-button upload-button-cancel" href="/#/textbook">Cancel</a>
+      <button type="submit" class="btn btn-success upload-button"  ng-click="createTextbook()" ng-disabled="textbook.$invalid || !textbook.cover">Submit</button> 
+    </div>
 
   </div>
+</div>

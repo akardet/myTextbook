@@ -22,5 +22,5 @@ TextbookSchema.pre('save', function(next){
     next();
 });
 
-// Exports the SuperheroSchema for use elsewhere.
+// Exports the TextbookSchema for use elsewhere.
 module.exports = mongoose.model('textbook', TextbookSchema);

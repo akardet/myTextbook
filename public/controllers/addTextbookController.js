@@ -24,7 +24,7 @@ addCtrl.controller('addTextbookController', function($scope, $http, filepickerSe
             },
             function(Blob){
                 console.log(JSON.stringify(Blob));
-                $scope.textbook.picture = Blob;
+                $scope.textbook.cover = Blob;
                 $scope.$apply();
             }
         );

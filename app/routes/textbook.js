@@ -32,6 +32,10 @@ module.exports = function() {
                 //If no errors, send it back to the client
                 res.json(textbook);
             });     
+        },
+
+        getSearch: function(req,res){
+            console.log(req.body);
         }
     }
 };  

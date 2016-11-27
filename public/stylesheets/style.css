@@ -1,5 +1,4 @@
 body { 
-  padding-top: 50px; 
   background-color: white;
 }
 
@@ -10,6 +9,8 @@ ul {
 .jumbotron {
   background-color: #ff9900; /* Orange */
   color: #ffffff;
+  padding-top: 0;
+  padding-bottom: 100px;
 }
 
 .container-fluid {
@@ -67,17 +68,24 @@ ul {
 }
 
 .upload-container {
- margin-top: 125px;
- font-family: "Franklin Gothic Medium";
- color: #424242;
+  display: block;
+  font-family: "Franklin Gothic Medium";
+  color: #424242;
+  width: 575px;
+  margin: 0 auto;
 }
 
 .upload-container ul {
   padding-left: 0;
 }
 
+.upload-container li {
+  padding: 15px 0px;
+}
+
 .upload-container label {
   font-size: 22px;
+  width: 90px;
 }
 
 .upload-container h1 {
@@ -86,6 +94,61 @@ ul {
 
 .upload-cst-padding {
   padding-left: 0;
+  padding-right: 0;
+}
+
+.upload-logo {
+  height: 100px;
+  width: 100px;
+  margin-top: 30px;
+  z-index: 1;
+}
+
+.upload-input {
+  height: 35px;
+  border: solid 2px #BCBCBC;
+  border-radius: 4px;
+  font-family: "Franklin Gothic Medium";
+  font-size: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.test-padding {
+  padding-top:80px !important;
+}
+
+.upload-input-big {
+  width: 480px;
+}
+
+.upload-edition {
+  width: 75px;
+}
+
+.upload-isbn {
+  width: 240px;
+}
+
+.upload-button {
+  width: 49%;
+}
+
+.upload-button-cancel {
+  margin-right: 8px;
+}
+
+.upload-button-block {
+  margin-top: 70px;
+}
+
+.filename-text {
+  font-weight: 100;
+}
+
+.filename { 
+  margin-top: 8px;
+  margin-left: -46px;
 }
 
 .search-box {
@@ -118,20 +181,6 @@ ul {
   right: 15%;
 }
 
-.upload-logo {
-  height: 100px;
-  width: 100px;
-  margin-top: 30px;
-}
-
-.upload-input {
-  height: 35px;
-  border: solid 2px #BCBCBC;
-  border-radius: 4px;
-  font-family: "Franklin Gothic Medium";
-  font-size: 17px;
-}
-
 .left-panel {
   left:0;
   height: 100%;
@@ -141,6 +190,7 @@ ul {
 
 .left-block {
   position: absolute;
+  z-index: -1;
   background-color: #ff9900;
 }
 
