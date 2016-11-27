@@ -1,23 +1,26 @@
-<div class="container col-lg-12">
-  <div class="text-center">
-    <input class="search-box" placeholder="What textbook are you looking for?"></input>
+<div class="text-center">
+    <input class="search-box" placeholder="What textbook are you looking for?" ng-model="searchText"></input>
     
-    <button class="search-button glyphicon glyphicon-search"></button>
+    <button class="search-button glyphicon glyphicon-search" type="button"></button>
   </div>
 
-  <div class="row about-containter">
-    <div class="about-left col-lg-4">
-      <h2>WHAT WE'RE ALL ABOUT</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Sed aliquam mauris id mattis rutrum. Aliquam euismod 
-        metus vitae mauris aliquam, sit amet accumsan metus 
-        rhoncus. Pellentesque elementum non enim non tincidunt. 
-        Morbi et sagittis nibh.</p>
+<div class="container search-result-box">
+<div ng-repeat="textbook in textbooks | filter:searchText | startFrom:currentPage*pageSize | limitTo:pageSize">
+    <div class="col-md-4 col-xs-6  col-sm-offset-0 textbook-box">            
+    <div class="thumbnail">
+      <img ng-src="{{textbook.cover.url | fpConvert: {filter:'sharpen', w:300, h:150} }}" />
+      <div class="caption text-center">
+        <label class="search-title">{{textbook.title}}</label>
+        <p><label>Authors </label> {{textbook.author}}</p>
+      </div>
+      <div class="text-right"><a ng-href="/#/detail/{{textbook._id}}" class="btn btn-default btn-view center-block" role="button">View</a> </div>
     </div>
-    <div class="about-right col-lg-4">
-      <h2>OUR PROMISE</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-         Sed aliquam mauris id mattis rutrum. </p>
     </div>
-  </div>
+</div>
+</div>
+
+<div class="search-buttons text-center">
+  <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">Previous</button>
+    {{currentPage+1}}/{{numberofPages()}}
+  <button ng-disabled="currentPage >= textbooks.length/pageSize-1" ng-click="currentPage=currentPage+1">Next</button>  
 </div>

@@ -16,6 +16,7 @@ module.exports = function() {
         },
 
         post: function(req, res){
+            console.log("textbook.post " + req.body.title);
             //Creates a new textbook
             var newTextbook = new Textbook(req.body);
             //Save it into the DB.
@@ -32,10 +33,7 @@ module.exports = function() {
                 //If no errors, send it back to the client
                 res.json(textbook);
             });     
-        },
-
-        getSearch: function(req,res){
-            console.log(req.body);
         }
+
     }
 };  

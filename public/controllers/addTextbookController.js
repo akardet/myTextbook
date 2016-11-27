@@ -3,6 +3,7 @@ addCtrl.controller('addTextbookController', function($scope, $http, filepickerSe
     $scope.textbook = {};
     //Send the newly created Textbook to the server to store in the db
     $scope.createTextbook = function(){
+        console.log("About to add textbook");
         $http.post('/textbook', $scope.textbook)
             .success(function(data){
                 console.log(JSON.stringify(data));

@@ -33,16 +33,32 @@ ul {
   color: #fff !important;
 }
 
+.nav-logo {
+  font-family: "Franklin Gothic Medium";
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-left: -100px;
+}
+
+.navbar-left>ul>li>a:hover {
+  color: green;
+}
+
 .nav-button {
   border: solid 3px #DB8403;
   margin-right: -80px;
-
 }
 
 .navbar-nav>li>a {
   padding: 10px 15px 10px 15px;
   font-size: 15px;
   font-weight: 700;
+}
+
+.nav>li>a:hover, .nav>li>a:active, .nav>li>a:focus {
+  background-color: transparent;
 }
 
 .navbar-default .navbar-toggle {
@@ -192,5 +208,47 @@ ul {
   position: absolute;
   z-index: -1;
   background-color: #ff9900;
+}
+
+.search-result-box {
+  padding-top: 65px;
+}
+
+.search-title {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.textbook-box {
+  height: 360px;
+}
+
+.caption {
+  height: 120px;
+  max-height: 120px;
+}
+
+.thumbnail {
+  padding-bottom: 35px;
+  border: none;
+}
+
+.btn-view {
+  width: 90%;
+  margin: auto;
+  border-radius: 0;
+  border: 2px solid #ff9900;
+  color: #ff9900;
+  font-family: "Franklin Gothic Medium";
+  font-size: 18px;
+}
+
+.btn-view:hover {
+  background-color: #ffad32;
+  border: #ffad32;
+  color: #ffffff;
+}
+
+.search-buttons {
+  margin-bottom: 80px;
 }
 

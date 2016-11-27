@@ -20,21 +20,22 @@
     <script src="./app.js"></script>    
 
     <script src="./controllers/addTextbookController.js"></script>
-    <script src="./controllers/searchTextbookController.js"></script>
+    <script src="./controllers/homeController.js"></script>
+    <script src="./controllers/searchController.js"></script>
 
 </head>
 <body>
 <div class="navbar navbar-default">
   <div class="container">
     <div id="navbar-main cd-main-content">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="nav-button"><a href="/#/addTextbook" onClick="window.location.reload()">Upload</a></li>
-      </ul>
+        <ul class="nav navbar-left">
+            <li><a class="nav-logo" href="/#/home">myTextbook</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-button"><a href="/#/addTextbook" onClick="window.location.reload()">Upload</a></li>
+        </ul>
     </div>
   </div>
-</div>
-<div class="jumbotron text-center header">
-    <img src="http://i.imgur.com/CTVirOC.png">
 </div>
 
     <!-- Here is where the partials will be dispdsflayed -->

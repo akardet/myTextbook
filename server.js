@@ -44,7 +44,8 @@ app.use(bodyParser.json({ type: 'application/json'}));
 app.use(express.static(__dirname + '/public'));
 
 app.route('/textbook')
-    .post(textbook.post)
+    .post(textbook.post);
+app.route('/search')
     .get(textbook.getAll);
 app.route('/textbook/:id')
     .get(textbook.getOne);
