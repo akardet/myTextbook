@@ -1,5 +1,5 @@
 //Main file
-var app = angular.module('myTextbook', ['addTextbookCtrl', 'homeCtrl', 'searchCtrl', 'ngRoute', 'angular-filepicker'])
+var app = angular.module('myTextbook', ['addTextbookCtrl', 'homeCtrl', 'searchCtrl', 'detailCtrl', 'ngRoute', 'angular-filepicker'])
     .config(function($routeProvider, filepickerProvider){
         //The route provider handles the client request to switch route
         $routeProvider
@@ -10,6 +10,10 @@ var app = angular.module('myTextbook', ['addTextbookCtrl', 'homeCtrl', 'searchCt
             .when('/search', {
                 templateUrl: 'partials/searchTextbook.html',
                 controller: 'searchController'
+            })
+            .when('/detail/:id', {
+                templateUrl: 'partials/detailTextbook.html',
+                controller: 'detailController'
             })
             .when('/addTextbook', {          
                 templateUrl: 'partials/addTextbook.html',

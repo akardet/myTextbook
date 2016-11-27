@@ -1,0 +1,32 @@
+<div class="container detail-container">
+<div class="breadcrumb-container col-md-12">
+  <a href="/#/search" class="breadcrumb">< Return to search</a>
+</div>
+<div class="col-md-6">
+  <img ng-src="{{textbook.cover.url | fpConvert: {filter:'sharpen', w:500} }}" />
+</div>
+<div class="col-md-6">
+  <ul>
+      <li>
+        <label>Title</label>
+        <span class="detail-text">{{textbook.title}}</span>
+      </li>
+      <li>
+        <label>Author</label>
+        <span class="detail-text">{{textbook.author}}</span>
+      </li>
+      <li>
+        <label>Edition</label>
+        <span class="detail-text">{{textbook.edition}}</span>
+      </li>
+      <li>
+        <label>ISBN</label>
+        <span class="detail-text">{{textbook.isbn}}</span>
+      </li>
+      <li>
+        <a href="{{textbook.link}}" class="btn btn-download-detail">Download</a>
+      </li>
+    </ul>
+</div>
+
+</div>
